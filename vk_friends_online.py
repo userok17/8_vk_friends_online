@@ -1,7 +1,6 @@
 import vk
 from getpass import getpass
-from pprint import pprint
-APP_ID = 5980137  # чтобы получить app_id, нужно зарегистрировать своё приложение на https://vk.com/dev
+APP_ID = 123456  # чтобы получить app_id, нужно зарегистрировать своё приложение на https://vk.com/dev
 
 
 def get_user_login():
