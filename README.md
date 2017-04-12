@@ -1,7 +1,35 @@
 # Watcher of Friends Online
 
-[TODO. There will be project description]
+Cкрипт Watcher of Friends Onlineспрашивает логин и пароль пользователя и выводит имена и фамилии друзей, кто онлайн.
 
-# Project Goals
+# Как запустить
 
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+Скрипт требует для своей работы установленного интерпретатора Python версии 3.5
+
+Запуск на Linux:
+
+```#!bash
+git clone https://github.com/userok17/8_vk_friends_online
+
+pip3 install -r requirements.txt
+
+python3 vk_friends_online.py
+
+Программа. Список друзей которые сейчас в сети.
+
+Введите логин: +79876543322
+Введите пароль: 
+
+Бадеин Федот
+Бакунин Ярослав
+Евреинов Андрей
+Калмыкова Лера
+```
+
+Запуск на Windows происходит аналогично.
+
+# Цели проекта
+
+Код создан в учебных целях. В рамках учебного курса по веб-разработке - [DEVMAN.org](https://devman.org)
+
+
