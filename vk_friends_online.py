@@ -12,19 +12,17 @@ def get_user_password():
     password = getpass(prompt='Введите пароль: ')
     return password
 
-def filter_online_friends(user):
-    if user['online']:
-        return True
 
 def get_online_friends(login, password):
     session = vk.AuthSession(
         app_id=APP_ID,
         user_login=login,
         user_password=password,
+        scope='friends'
     )
     api = vk.API(session)
-    friends = api.friends.get(fields=['nickname', 'online'])
-    friends_online = filter(filter_online_friends, friends)
+    list_id = api.friends.getOnline()
+    friends_online = api.users.get(user_ids=list_id)
     return friends_online
 
 
